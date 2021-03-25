@@ -6,7 +6,7 @@
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./sass/main.css">
-    <link rel="stylesheet" href="./css/variables.css">
+    <!-- <link rel="stylesheet" href="./css/variables.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@700&display=swap"
       rel="stylesheet">
@@ -56,95 +56,96 @@
     <main>
         <!--Эффективные решения для вашего бизнеса-->
           <section class="hero">
-            <div class="hero-container">
-              <h1 class="title">
+            <div class="hero__container">
+              <h1 class="hero__title">
                 Эффективные решения для вашего бизнеса
               </h1>
               <button class="btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
           </section>
-        <!--Особенности-->
-        <section class="section">
+
+        <!--Features-->
+        <section class="features-section">
           <div class="features-container">
             <ul class="features">
               <!--Feature 1-->
               <li class="feature icon-antenna">
-                <div class="feature-icon">
-                  <svg class="feature icon">
+                <div class="feature__icon">
+                  <svg class="feature--icon">
                     <use href="./images/svg/sprite.svg#antenna"></use>
                   </svg>
                 </div>
-                <h3 class="title3">Внимание к деталям</h3>
-                <p class="feature-item">Идейные соображения, а также начало повседневной
+                <h3 class="feature__title">Внимание к деталям</h3>
+                <p class="feature__item">Идейные соображения, а также начало повседневной
                   работы по формированию позиции.</p>
               </li>
               <!--Feature 2-->
               <li class="feature icon-clock">
-                <div class="feature-icon">
-                  <svg class="feature icon">
+                <div class="feature__icon">
+                  <svg class="feature--icon">
                     <use href="./images/svg/sprite.svg#clock"></use>
                   </svg>
                 </div>
-                <h3 class="title3">Пунктуальность</h3>
-                <p class="feature-item">Задача организации, в особенности же рамки
+                <h3 class="feature__title">Пунктуальность</h3>
+                <p class="feature__item">Задача организации, в особенности же рамки
                   и место обучения кадров влечет за собой.</p>
               </li>
               <!--Feature 3-->
               <li class="feature icon-diagram">
-                <div class="feature-icon">
-                  <svg class="feature icon">
+                <div class="feature__icon">
+                  <svg class="feature--icon">
                     <use href="./images/svg/sprite.svg#diagram"></use>
                   </svg>
                 </div>
-                <h3 class="title3">Планирование</h3>
-                <p class="feature-item">Равным образом консультация с широким
+                <h3 class="feature__title">Планирование</h3>
+                <p class="feature__item">Равным образом консультация с широким
                   активом в значительной степени обуславливает.</p>
               </li>
               <!--Feature 4-->
               <li class="feature icon-astronaut">
-                <div class="feature-icon">
-                  <svg class="feature icon">
+                <div class="feature__icon">
+                  <svg class="feature--icon">
                     <use href="./images/svg/sprite.svg#astronaut"></use>
                   </svg>
                 </div>
-                <h3 class="title3">Современные технологии</h3>
-                <p class="feature-item">Значимость этих проблем настолько
+                <h3 class="feature__title">Современные технологии</h3>
+                <p class="feature__item">Значимость этих проблем настолько
                   очевидна, что реализация плановых заданий.</p>
               </li>
             </ul>
           </div>
         </section>
-        <section class="work">
-          <div class="content-container">
+        <section class="expertise">
+          <div class="expertise-container">
           <!--Чем мы занимаемся-->
           <h2 class="title2">
           Чем мы занимаемся
           </h2>
-            <ul class="boxes">
+            <ul class="expertise-boxes">
               <!--box 1-->
-              <li class="box">
-                <a class="box-container" href="#">
-                  <img class="box-image" src="./images/box1.jpg" alt="workspase1" width="370" height="294" />
-                  <div class="box-overlay">
-                    <p class="box-text">Десктопные приложения</p>
+              <li class="expertise-box">
+                <a class="expertise-box__link" href="#">
+                  <img class="expertise-box__image" src="./images/box1.jpg" alt="workspase1" width="370" height="294" />
+                  <div class="expertise-box__overlay">
+                    <p class="overlay__text">Десктопные приложения</p>
                   </div>
                 </a>
               </li>
               <!--box 2-->
-              <li class="box">
-                <a class="box-container" href="#">
-                  <img class="box-image" src="./images/box2.jpg" alt="workspase2" width="370" height="294" />
-                  <div class="box-overlay">
-                    <p class="box-text">Мобильные приложения</p>
+              <li class="expertise-box">
+                <a class="expertise-box__link" href="#">
+                  <img class="expertise-box__image" src="./images/box2.jpg" alt="workspase2" width="370" height="294" />
+                  <div class="expertise-box__overlay">
+                    <p class="overlay__text">Мобильные приложения</p>
                   </div>
                 </a>
               </li>
               <!--box 3-->
-              <li class="box">
-                <a class="box-container" href="#">
-                  <img class="box-image" src="./images/box3.jpg" alt="workspase3" width="370" height="294" />
-                  <div class="box-overlay">
-                    <p class="box-text">Дизайнерские решения</p>
+              <li class="expertise-box">
+                <a class="expertise-box__link" href="#">
+                  <img class="expertise-box__image" src="./images/box3.jpg" alt="workspase3" width="370" height="294" />
+                  <div class="expertise-box__overlay">
+                    <p class="overlay__text">Дизайнерские решения</p>
                   </div>
                 </a>
               </li>
@@ -169,33 +170,33 @@
               <ul class="social-media-container">
                 <!-- Instagram -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#instagram"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- Twitter -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#twitter"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- Facebook -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#facebook"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- LinkedIn -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#linkedin"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -211,33 +212,33 @@
               <ul class="social-media-container">
                 <!-- Instagram -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#instagram"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- Twitter -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#twitter"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- Facebook -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#facebook"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- LinkedIn -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#linkedin"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -254,33 +255,33 @@
                 <ul class="social-media-container">
                   <!-- Instagram -->
                   <li class="social-media">
-                    <a class="social-media-link" href="#">
-                      <svg class="social-media-item">
-                        <use class="social-media-icon" href="./images/svg/sprite.svg#instagram"></use>
+                    <a class="social-media__link" href="#">
+                      <svg class="social-media__item">
+                        <use href="./images/svg/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <!-- Twitter -->
                   <li class="social-media">
-                    <a class="social-media-link" href="#">
-                      <svg class="social-media-item">
-                        <use class="social-media-icon" href="./images/svg/sprite.svg#twitter"></use>
+                    <a class="social-media__link" href="#">
+                      <svg class="social-media__item">
+                        <use href="./images/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <!-- Facebook -->
                   <li class="social-media">
-                    <a class="social-media-link" href="#">
-                      <svg class="social-media-item">
-                        <use class="social-media-icon" href="./images/svg/sprite.svg#facebook"></use>
+                    <a class="social-media__link" href="#">
+                      <svg class="social-media__item">
+                        <use href="./images/svg/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <!-- LinkedIn -->
                   <li class="social-media">
-                    <a class="social-media-link" href="#">
-                      <svg class="social-media-item">
-                        <use class="social-media-icon" href="./images/svg/sprite.svg#linkedin"></use>
+                    <a class="social-media__link" href="#">
+                      <svg class="social-media__item">
+                        <use href="./images/svg/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -297,33 +298,33 @@
               <ul class="social-media-container">
                 <!-- Instagram -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#instagram"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- Twitter -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#twitter"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- Facebook -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#facebook"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <!-- LinkedIn -->
                 <li class="social-media">
-                  <a class="social-media-link" href="#">
-                    <svg class="social-media-item">
-                      <use class="social-media-icon" href="./images/svg/sprite.svg#linkedin"></use>
+                  <a class="social-media__link" href="#">
+                    <svg class="social-media__item">
+                      <use href="./images/svg/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -393,61 +394,61 @@
     <!--bottom-->
     <footer class="footer">
       <div class="footer-container">
-        <div class="contacts-footer">
+        <div class="footer__contacts">
           <a class="logo-main" href="./index.html">Web<span class="logo-accent footer">Studio</span></a>
-          <address class="address" id="contacts">
+          <address class="footer__address" id="contacts">
             г. Киев, пр-т Леси Украинки, 26 <br />
-            <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-            <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="footer__contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+            <a class="footer__contact-item" href="tel:+380961111111">+38 096 111 11 11</a>
           </address>
         </div>
 
-        <div class="footer-content">
-          <span class="text">присоединяйтесь</span>
+        <div class="footer-links-wrapper">
+          <span class="footer-headline">присоединяйтесь</span>
           <ul class="social-media-container footer">
             <!-- Instagram -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#instagram"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <!-- Twitter -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#twitter"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <!-- Facebook -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#facebook"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <!-- LinkedIn -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#linkedin"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="signup-form">
-          <span class="text">Подпишитесь на рассылку</span>
-          <form class="signup">
+          <span class="signup-form__header">Подпишитесь на рассылку</span>
+          <form class="signup-form__wrapper">
             
-            <input class="signup-input" id="email" type="email" name="email" placeholder="E-mail"/>
-            <label class="signup-label" for="email"></label>
-            <button class="signup-button" type="submit">
+            <input class="signup-form__input" id="email" type="email" name="email" placeholder="E-mail"/>
+            <label class="signup-form__label" for="email"></label>
+            <button class="signup-form__button" type="submit">
               Подписаться
-              <svg class="button-icon-send">
+              <svg class="signup-form__button-icon-send">
                 <use href="./images/svg/sprite.svg#send"></use>
               </svg>
             </button>
@@ -456,50 +457,51 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button" data-modal-close>
-          <svg class="button-icon">
-            <use class="button-svg" href="./images/svg/sprite.svg#close"></use>
+        <button class="modal__button" data-modal-close>
+          <svg class="button__icon">
+            <use class="button__svg" href="./images/svg/sprite.svg#close"></use>
           </svg>
         </button>
-        <div role="group" class="form-container">
-          <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="call-back-form">
-            <div class="form-field">
-              <label class="form-label" for="name">Имя</label>
-              <input class="form-input" type="text" name="name" id="name" />
-              <svg class="form-icon">
-                <use class="person" href="./images/svg/sprite.svg#person"></use>
+        <div role="group" class="form__container">
+          <h2 class="form__header">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="form">
+            <div class="form__field">
+              <label class="form__label" for="name">Имя</label>
+              <input class="form__input" type="text" name="name" id="name" />
+              <svg class="form__icon">
+                <use href="./images/svg/sprite.svg#person"></use>
               </svg>
             </div>
-            <div class="form-field">
-              <label class="form-label" for="tel">Телефон</label>
-              <input class="form-input" type="tel" name="tel" id="tel" />
-              <svg class="form-icon">
-                <use class="phone-black" href="./images/svg/sprite.svg#phone-black"></use>
+            <div class="form__field">
+              <label class="form__label" for="tel">Телефон</label>
+              <input class="form__input" type="tel" name="tel" id="tel" />
+              <svg class="form__icon">
+                <use href="./images/svg/sprite.svg#phone-black"></use>
               </svg>
             </div>
-            <div class="form-field">
-              <label class="form-label" for="mail">Почта</label>
-              <input class="form-input" type="email" name="mail" id="mail" />
-              <svg class="form-icon">
-                <use class="email-black" href="./images/svg/sprite.svg#email-black"></use>
+            <div class="form__field">
+              <label class="form__label" for="mail">Почта</label>
+              <input class="form__input" type="email" name="mail" id="mail" />
+              <svg class="form__icon">
+                <use href="./images/svg/sprite.svg#email-black"></use>
               </svg>
             </div>
-            <div class="form-field">
-              <label class="form-label" for="comment">Комментарий</label>
-              <textarea class="form-textarea" name="comment" id="comment" rows="4" placeholder="Введите текст"></textarea>
+            <div class="form__field">
+              <label class="form__label" for="comment">Комментарий</label>
+              <textarea class="form__textarea" name="comment" id="comment" rows="4" placeholder="Введите текст"></textarea>
             </div>
           </form>
           <div class="check-box-container">
-            <label class="check-box-label" for="policy">
-              <input class="check-input" type="checkbox" name="check-box-policy" id="policy" />
+            <label class="check-box__label">
+              <input class="check-box__input" type="checkbox" name="check-box-policy" />
               <span class="check-box"></span>
-              Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю
+              <span class="check-box__link"><a href="#">Условия договора</a></span>
             </label>
           </div>
-          <button class="btn modal-btn" type="submit">Отправить</button>
+          <button class="btn modal__btn" type="submit">Отправить</button>
         </div>
       </div>
     </div>

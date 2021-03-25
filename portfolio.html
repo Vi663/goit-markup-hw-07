@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./sass/main.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,32 +16,32 @@
     <!--top-->
     <header class="header">
       <div class="header-container">
-        <nav class="navigation">
-          <a class="web" href="./index.html">Web<span class="logo">Studio</span></a>
+        <nav class="header-navigation">
+          <a class="logo-main" href="./index.html">Web<span class="logo-accent">Studio</span></a>
           <ul class="menu-nav">
-            <li class="navlink">
+            <li class="menu-nav__link">
               <a href="./index.html">Студия</a>
             </li>
-            <li class="navlink current">
+            <li class="menu-nav__link current">
               <a class="current-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="navlink">
+            <li class="menu-nav__link">
               <a href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts-container">
-          <li class="list-item">
-            <a class="mail" href="mailto:info@devstudio.com">
+          <li class="contacts__list-item">
+            <a class="contacts-link" href="mailto:info@devstudio.com">
               <svg class="contacts-icon" width="16px" height="12px">
                 <use href="./images/svg/sprite.svg#mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-        
-          <li class="list-item">
-            <a class="phone" href="tel:+380961111111">
+    
+          <li class="contacts__list-item">
+            <a class="contacts-link" href="tel:+380961111111">
               <svg class="contacts-icon" width="10px" height="16px">
                 <use href="./images/svg/sprite.svg#phone"></use>
               </svg>
@@ -239,61 +239,61 @@
     <!--bottom-->
     <footer class="footer">
       <div class="footer-container">
-        <div class="contacts-footer">
-          <a class="web" href="./index.html">Web<span class="logo footer">Studio</span></a>
-          <address class="address" id="contacts">
+        <div class="footer__contacts">
+          <a class="logo-main" href="./index.html">Web<span class="logo-accent footer">Studio</span></a>
+          <address class="footer__address" id="contacts">
             г. Киев, пр-т Леси Украинки, 26 <br />
-            <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-            <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="footer__contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+            <a class="footer__contact-item" href="tel:+380961111111">+38 096 111 11 11</a>
           </address>
         </div>
-
-        <div class="footer-content">
-          <span class="text">присоединяйтесь</span>
+    
+        <div class="footer-links-wrapper">
+          <span class="footer-headline">присоединяйтесь</span>
           <ul class="social-media-container footer">
             <!-- Instagram -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#instagram"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <!-- Twitter -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#twitter"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <!-- Facebook -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#facebook"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <!-- LinkedIn -->
             <li class="social-media">
-              <a class="social-media-link" href="#">
-                <svg class="social-media-item">
-                  <use class="social-media-icon" href="./images/svg/sprite.svg#linkedin"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__item">
+                  <use href="./images/svg/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="signup-form">
-          <span class="text">Подпишитесь на рассылку</span>
-          <form class="signup">
-        
-            <input class="signup-input" id="email" type="email" name="email" placeholder="E-mail" />
-            <label class="signup-label" for="email"></label>
-            <button class="signup-button" type="submit">
+          <span class="signup-form__header">Подпишитесь на рассылку</span>
+          <form class="signup-form__wrapper">
+    
+            <input class="signup-form__input" id="email" type="email" name="email" placeholder="E-mail" />
+            <label class="signup-form__label" for="email"></label>
+            <button class="signup-form__button" type="submit">
               Подписаться
-              <svg class="button-icon-send">
+              <svg class="signup-form__button-icon-send">
                 <use href="./images/svg/sprite.svg#send"></use>
               </svg>
             </button>

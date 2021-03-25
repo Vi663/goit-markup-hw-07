@@ -22,19 +22,19 @@
 
 .contacts__list-item {
   margin-left: 30px;
-  color: var(--grey-text);
+  color: $grey-text;
   justify-content: space-between;
   align-items: center;
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 
   & :hover,
   & :focus {
-  color: var(--blue-text);
+  color: $accentColor;
   outline: none;
-  fill: var(--button-bg-active);
+  fill: $accentColor;
   }
 }
 
@@ -49,11 +49,11 @@
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 
   & :hover,
   &:focus {
-    color: var(--blue-text);
+    color: $accentColor;
   }
 
 }
@@ -61,7 +61,7 @@
 .contacts-icon {
   display: flex;
   flex-direction: row;
-  color: var(--grey-text);
+  color: $grey-text;
   margin: 0px;
   margin-right: 10px;
   align-items: center;

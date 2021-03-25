@@ -1,7 +1,7 @@
 .logo-main {
   display: block;
   font-family: 'Raleway', sans-serif;
-  color: var(--blue-text);
+  color: $accentColor;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -12,10 +12,10 @@
 .logo-accent {
   @extend %link;
   padding-right: 93px;
-  color: var(--black-logo);
+  color: $black-logo;
 
   & .footer {
-  color: var(--white-text);
+  color: $whiteColor;
   padding: 0px;
 }
 }
