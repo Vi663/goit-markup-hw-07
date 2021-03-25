@@ -1,0 +1,21 @@
+.logo-main {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  color: var(--blue-text);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  @extend %link;
+}
+
+.logo-accent {
+  @extend %link;
+  padding-right: 93px;
+  color: var(--black-logo);
+
+  & .footer {
+  color: var(--white-text);
+  padding: 0px;
+}
+}

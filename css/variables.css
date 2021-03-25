@@ -1,0 +1,21 @@
+:root {
+  --black-logo: #000000;
+  --black-text: #212121;
+  --white-text: #ffffff;
+  --gray-text: #757575;
+  --blue-text: #2196F3;
+  --elements-gray: #2F303A;
+  --button-bg-non-active: #F5F4FA;
+  --button-bg-active: #2196F3;
+  --icon-non-active: #AFB1B8;
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+<img class="picture" src="./images/img5.jpg" alt="Проект Boxes" width="370" height="294" />
+<img class="picture" src="./images/img6.jpg" alt="Inspiration has no Borders" width="370" height="294" />
+<img class="picture" src="./images/img7.jpg" alt="Издание Limited Edition" width="370" height="294" />
+<img class="picture" src="./images/img8.jpg" alt="Проект LAB" width="370" height="294" />
+<img class="picture" src="./images/img9.jpg" alt="Growing Business" width="370" height="294" />
