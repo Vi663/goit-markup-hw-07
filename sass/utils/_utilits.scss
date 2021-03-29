@@ -65,3 +65,15 @@ body{
   padding-top: 30px;
   padding-bottom: 10px;
 }
+
+.block-heading {
+  display: block;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black-text;
+  margin: 0px;
+  margin-bottom: 50px;
+}

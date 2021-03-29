@@ -15,6 +15,15 @@
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
 
+  &-container {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  color: $non-active;
+  justify-content: center;
+  }
   &__link {
     display: flex;
     align-items: center;
@@ -75,15 +84,5 @@
     border: 0;
     outline: none;
   }
-}
-
-.social-media-container {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
-  color: $non-active;
-  justify-content: center;
 }
 
