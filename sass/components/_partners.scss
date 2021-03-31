@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
 
-  @include transition (color, border);
+  @include transition (border, color);
   
   &:hover {
     border: 1px solid currentColor;
