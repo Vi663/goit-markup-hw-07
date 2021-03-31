@@ -27,7 +27,7 @@
     color: $accentColor;
   }
 
-  &__link.current {
+  &__link--current {
     position: relative;
     color: $accentColor;
     @include transition (color);
@@ -36,8 +36,9 @@
   &__link {
     @include transition (color);
   }
+}
 
-  &__link.current .current-link::after {
+.current-link::after {
     position: absolute;
     right: 0;
     top: 45px;
@@ -48,4 +49,3 @@
     background-color: $accentColor;
     border-radius: 2px;
   }
-}

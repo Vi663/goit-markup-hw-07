@@ -373,7 +373,7 @@ Correct the inability to style clickable types in iOS and Safari.
   color: #2196F3;
 }
 
-.menu-nav__link.current {
+.menu-nav__link--current {
   position: relative;
   color: #2196F3;
   -webkit-transition-property: color;
@@ -393,7 +393,7 @@ Correct the inability to style clickable types in iOS and Safari.
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-nav__link.current .current-link::after {
+.current-link::after {
   position: absolute;
   right: 0;
   top: 45px;
