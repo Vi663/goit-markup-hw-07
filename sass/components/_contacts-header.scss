@@ -26,9 +26,7 @@
   justify-content: space-between;
   align-items: center;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition (color);
 
   & :hover,
   & :focus {
@@ -47,9 +45,7 @@
   background-size: contain;
   background-position: center;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition (color);
 
   & :hover,
   &:focus {

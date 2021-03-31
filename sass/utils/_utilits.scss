@@ -8,6 +8,12 @@ body{
   text-decoration: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 %link {
   text-decoration: none;
   color: inherit;
@@ -77,3 +83,11 @@ body{
   margin: 0px;
   margin-bottom: 50px;
 }
+
+@mixin transition ($property...) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

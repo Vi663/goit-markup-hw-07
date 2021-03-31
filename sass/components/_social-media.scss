@@ -11,9 +11,7 @@
   height: 40px;
   border-radius: 50px;
 
-  transition-property: color, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition (color, opacity);
 
   &-container {
   display: flex;
@@ -24,6 +22,7 @@
   color: $non-active;
   justify-content: center;
   }
+  
   &__link {
     display: flex;
     align-items: center;
@@ -34,9 +33,7 @@
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+    @include transition (background-color);
   }
 
   &__link:hover,

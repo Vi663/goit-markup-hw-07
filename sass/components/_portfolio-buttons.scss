@@ -52,9 +52,7 @@
   border-radius: 4px;
   transform: scale(1);
 
-  transition-property: color, background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition (color, background-color, transform);
 
   &:hover,
   &:focus {

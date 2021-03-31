@@ -1,21 +1,17 @@
 .card-container {
   margin: -15px;
   width: 1200px;
-}
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  padding-inline-start: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0px;
+    &__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin: 0px;
+  }
 }
-
-/* portfollio */
 
 .card {
   list-style: none;
@@ -33,6 +29,23 @@
     cursor: pointer;
     outline: none;
   }
+  &__overlay {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 294px;
+    overflow: hidden;
+  }
+
+  &:hover .overlay,
+  &__overlay:focus .overlay {
+    transform: translateY(-100%);
+  }
+
+  &__overlay:focus {
+    outline: none;
+    border: none;
+  }
 }
 
 /* .card:not(:nth-last-child(-n + 3)) {
@@ -42,24 +55,6 @@
 .card:not(:nth-last-child(3n + 1)) {
   margin-right: 30px;
 } */
-
-.overlay-container {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 294px;
-  overflow: hidden;
-}
-
-.card:hover .overlay,
-.overlay-container:focus .overlay {
-  transform: translateY(-100%);
-}
-
-.overlay-container:focus {
-  outline: none;
-  border: none;
-}
 
 .overlay {
   position: absolute;
@@ -73,19 +68,19 @@
   background-color: $accentColor;
   opacity: 0.9;
   transform: translateY(0);
-  transition: transform $timing-function;
-}
-
-.overlay-text {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: $whiteColor;
+  @include transition (transform, opacity, background-color);
+  
+  &-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $whiteColor;
+  }
 }
 
 .meta__container {

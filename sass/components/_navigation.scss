@@ -30,15 +30,11 @@
   &__link.current {
     position: relative;
     color: $accentColor;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+    @include transition (color);
   }
 
   &__link {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+    @include transition (color);
   }
 
   &__link.current .current-link::after {

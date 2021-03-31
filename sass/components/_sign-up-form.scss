@@ -43,9 +43,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
-  transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition (color, border);
 }
 
 .signup-form__input:hover,
@@ -69,9 +67,7 @@
   fill: currentColor;
 
   transform: translate(5px);
-  transition-property: transform, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition (transform, opacity);
 }
 
 .signup-form__button:hover,
