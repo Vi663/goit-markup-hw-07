@@ -1,12 +1,12 @@
 .header {
-  position: relative;
   font-family: 'Roboto', sans-serif;
   padding: 24px 0px 25px;
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-container {
-  width: 1200px;
+.header__container {
+  position: relative;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -16,3 +16,4 @@
   justify-content: space-between;
   align-items: center;
 }
+
